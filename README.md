@@ -5,7 +5,7 @@ API back-end para controle de reservas de salas
 * Para execução deste projeto é necessário ter previamente o Apache Maven instalado e configurado para o ambiente.
 <br>Disponível em: https://maven.apache.org/
 
-* É necessário também o banco de dados PostgreSQL instalado, porta padrão 5432 e o database "reservasalas" criado.
+* É necessário o banco de dados PostgreSQL instalado com a porta padrão 5432 e o database "reservasalas" criado.
 <br>Disponível em: https://www.postgresql.org/
 <br>O acesso ao banco de dados necessitará do usuário que foi configurado no arquivo project-defaults.yml:
 
