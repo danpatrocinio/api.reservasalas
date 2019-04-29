@@ -9,7 +9,7 @@ API back-end para controle de reservas de salas
 <br>Disponível em: https://www.postgresql.org/
 <br>O acesso ao banco de dados necessitará do usuário que foi configurado no arquivo project-defaults.yml:
 
-        username: postgres<br>
+        username: postgres
         password: postgres
 
 * Para rodar a API na porta padrão 8080, por linha de comando, a partir do diretório local com o arquivo pom.xml:
