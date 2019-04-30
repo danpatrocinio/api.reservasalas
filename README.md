@@ -1,6 +1,6 @@
 # api.reservasalas
 
-API back-end para controle de reservas de salas
+API back-end para controle de reservas de sala
 
 * Para execução deste projeto é necessário ter previamente o Apache Maven instalado e configurado para o ambiente.
 <br>Disponível em: https://maven.apache.org/
@@ -12,7 +12,7 @@ API back-end para controle de reservas de salas
         username: postgres
         password: postgres
 
-* Para rodar a API na porta padrão 8080, por linha de comando, a partir do diretório local com o arquivo pom.xml:
+* Para rodar a API na porta padrão 8080, por linha de comando, a partir do diretório sala com o arquivo pom.xml:
 
         mvn thorntail:run
 

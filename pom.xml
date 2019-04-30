@@ -7,7 +7,7 @@
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
   <name>api.reservasalas</name>
-  <description>API restful back-end para sistema de reservas de salas</description>
+  <description>API restful back-end para sistema de reservas de sala</description>
   
   	<properties>
 		<version.thorntail>2.4.0.Final</version.thorntail>
