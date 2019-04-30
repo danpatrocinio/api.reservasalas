@@ -1,6 +1,6 @@
 package com.banana.reservasalas.repositories;
 
-import com.banana.reservasalas.models.Locais;
+import com.banana.reservasalas.models.entidades.Locais;
 
 import javax.ejb.Stateless;
 import javax.ejb.TransactionAttribute;

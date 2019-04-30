@@ -1,6 +1,6 @@
 package com.banana.reservasalas.rest.resources;
 
-import com.banana.reservasalas.models.Locais;
+import com.banana.reservasalas.models.entidades.Locais;
 import com.banana.reservasalas.repositories.LocaisRepository;
 import com.banana.reservasalas.rest.AbstractCrudResource;
 

@@ -6,7 +6,7 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
-import com.banana.reservasalas.models.Salas;
+import com.banana.reservasalas.models.entidades.Salas;
 import com.banana.reservasalas.repositories.SalasRepository;
 import com.banana.reservasalas.rest.AbstractCrudResource;
 

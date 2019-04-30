@@ -1,4 +1,4 @@
-package com.banana.reservasalas.models;
+package com.banana.reservasalas.models.entidades;
 
 import java.util.Date;
 
@@ -15,6 +15,8 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+
+import com.banana.reservasalas.models.ValueObject;
 
 @Entity
 @Table(name = "RESERVAS")

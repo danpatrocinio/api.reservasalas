@@ -1,10 +1,12 @@
-package com.banana.reservasalas.models;
+package com.banana.reservasalas.models.entidades;
 
 import org.hibernate.validator.constraints.Email;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+
+import com.banana.reservasalas.models.ValueObject;
 
 @Entity
 @Table(name = "USUARIOS", uniqueConstraints = @UniqueConstraint(columnNames = "EMAIL", name = "email_uk"))

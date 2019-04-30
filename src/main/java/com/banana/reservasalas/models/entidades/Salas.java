@@ -1,4 +1,4 @@
-package com.banana.reservasalas.models;
+package com.banana.reservasalas.models.entidades;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -11,6 +11,8 @@ import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+
+import com.banana.reservasalas.models.ValueObject;
 
 @Entity
 @Table(name = "SALAS")

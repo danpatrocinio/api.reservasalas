@@ -5,7 +5,7 @@ import javax.ejb.TransactionAttribute;
 import javax.ejb.TransactionAttributeType;
 import javax.inject.Inject;
 
-import com.banana.reservasalas.models.Reservas;
+import com.banana.reservasalas.models.entidades.Reservas;
 
 @Stateless
 @TransactionAttribute(TransactionAttributeType.SUPPORTS)
