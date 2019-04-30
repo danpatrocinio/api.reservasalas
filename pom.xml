@@ -37,6 +37,12 @@
 			<version>7.0</version>
 			<scope>provided</scope>
 		</dependency>
+		<!-- Hibernate Validator-->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-validator</artifactId>
+			<version>5.4.3.Final</version>
+		</dependency>
 		<!-- Driver do Postgres -->
 		<dependency>
 			<groupId>org.postgresql</groupId>
