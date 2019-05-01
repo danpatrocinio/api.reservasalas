@@ -52,6 +52,12 @@ public class Reservas implements ValueObject {
     @Column(name = "OBSERVACAO", length = 255)
     private String observacao;
 
+    @Column(name = "CAFE", length = 1)
+    private String cafe;
+
+    @Column(name = "QTD_PESSOAS")
+    private Integer qtdPessoas;
+
     @Override
     public Long getId() {
         return id;
@@ -95,6 +101,22 @@ public class Reservas implements ValueObject {
 
     public String getObservacao() {
         return observacao;
+    }
+
+    public String getCafe() {
+        return cafe;
+    }
+
+    public void setCafe(String cafe) {
+        this.cafe = cafe;
+    }
+
+    public Integer getQtdPessoas() {
+        return qtdPessoas;
+    }
+
+    public void setQtdPessoas(Integer qtdPessoas) {
+        this.qtdPessoas = qtdPessoas;
     }
 
     public void setObservacao(String observacao) {

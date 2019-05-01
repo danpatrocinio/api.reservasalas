@@ -27,24 +27,26 @@ public class GenericRepository<T extends ValueObject> {
         return em.createQuery("select o from ".concat(valueObjectType.getName()).concat(" o"), valueObjectType).getResultList();
     }
 
+    public List<T> getByCriteria(String criteria) {
+        return em.createQuery("select o from ".concat(valueObjectType.getName()).concat(" o WHERE ").concat(criteria), valueObjectType).getResultList();
+    }
+
+    public boolean existsByCriteria(String criteria) {
+        return em.createQuery("select count(o)>0 from ".concat(valueObjectType.getName()).concat(" o WHERE ").concat(criteria), Boolean.class).getSingleResult();
+    }
+
     public T insert(T valueObject) {
         em.persist(valueObject);
         return valueObject;
     }
 
     public T update(T valueObject) {
-        T oldValueObject = em.find(valueObjectType, valueObject.getId());
-        if (oldValueObject == null) {
-            throw new EntityNotFoundException();
-        }
+        find(valueObject.getId()); // find para validar a existencia do objeto persistido
         return em.merge(valueObject);
     }
 
     public void delete(Long id) {
-        T valueObject = em.getReference(valueObjectType, id);
-        if (valueObject == null) {
-            throw new EntityNotFoundException();
-        }
+        T valueObject = find(id); // find para validar a existencia do objeto persistido e recupera-lo
         em.remove(valueObject);
     }
 }

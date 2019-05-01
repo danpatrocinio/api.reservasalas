@@ -1,14 +1,14 @@
 package com.banana.reservasalas.rest.resources;
 
-import javax.inject.Inject;
-import javax.ws.rs.Consumes;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
-import javax.ws.rs.core.MediaType;
-
 import com.banana.reservasalas.models.entidades.Salas;
 import com.banana.reservasalas.repositories.SalasRepository;
 import com.banana.reservasalas.rest.AbstractCrudResource;
+
+import javax.inject.Inject;
+import javax.ws.rs.*;
+import javax.ws.rs.core.MediaType;
+
+import java.util.List;
 
 @Path("salas")
 @Produces(MediaType.APPLICATION_JSON)
@@ -22,6 +22,12 @@ public class SalasResource extends AbstractCrudResource<Salas> {
     @Override
     public SalasRepository getRepository() {
         return repository;
+    }
+
+    @GET
+    @Path("local/{idLocal}")
+    public List<Salas> getSalasFromLocal(@PathParam("idLocal") Long idLocal) {
+        return repository.findByLocal(idLocal);
     }
 
 }
