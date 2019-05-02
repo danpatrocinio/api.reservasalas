@@ -21,6 +21,10 @@ public class Locais implements ValueObject {
     @Column(name = "DESCRICAO", length = 255)
     private String descricao;
 
+    @Size(min = 2, max = 255, message = "{Locais.endereco.Size}")
+    @Column(name = "ENDERECO", length = 255)
+    private String endereco;
+
     @Override
     public Long getId() {
         return id;
@@ -36,5 +40,13 @@ public class Locais implements ValueObject {
 
     public void setDescricao(String descricao) {
         this.descricao = descricao;
+    }
+
+    public String getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
     }
 }

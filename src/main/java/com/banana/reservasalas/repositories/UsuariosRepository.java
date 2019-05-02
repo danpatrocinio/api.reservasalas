@@ -30,7 +30,7 @@ public class UsuariosRepository extends AbstractGenericCrud<Usuarios> {
         if (action.equals(INSERT) || action.equals(UPDATE)) {
 
             if (repository.existsByCriteria("email = '".concat(usuario.getEmail()).concat("' AND id <> " + usuario.getId()))) {
-                throw new BusinessException("Email já cadastrado para outro usuário");
+                throw new BusinessException("E-mail já cadastrado para outro usuário");
             }
 
         }

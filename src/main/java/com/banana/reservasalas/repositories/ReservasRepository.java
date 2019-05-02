@@ -48,7 +48,7 @@ public class ReservasRepository extends AbstractGenericCrud<Reservas> {
             boolean existeConflito = repository.existsByCriteria(criteria);
 
             if (existeConflito) {
-                throw new BusinessException("A data e hora informada conflita com outra reserva desta sala");
+                throw new BusinessException("Já existe reserva no mesmo período para esta sala");
             }
 
         }
