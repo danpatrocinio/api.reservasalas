@@ -1,11 +1,10 @@
 package com.banana.reservasalas.filters;
 
-import java.io.IOException;
-
 import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 
 @WebFilter(filterName = "CorsFilter", urlPatterns = {"*"})
 public class CORSFilter implements Filter {
@@ -39,7 +38,7 @@ public class CORSFilter implements Filter {
     }
 
     @Override
-    public void init(FilterConfig arg0) throws ServletException {
+    public void init(FilterConfig arg0) {
     }
 
 }

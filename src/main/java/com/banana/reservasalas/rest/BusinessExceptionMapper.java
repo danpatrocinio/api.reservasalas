@@ -1,6 +1,7 @@
 package com.banana.reservasalas.rest;
 
 import com.banana.reservasalas.repositories.BusinessException;
+
 import javax.ws.rs.core.Response;
 import javax.ws.rs.ext.ExceptionMapper;
 import javax.ws.rs.ext.Provider;

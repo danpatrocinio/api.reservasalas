@@ -1,8 +1,9 @@
 package com.banana.reservasalas.repositories;
 
 import com.banana.reservasalas.models.ValueObject;
-import javax.persistence.EntityNotFoundException;
+
 import javax.persistence.EntityManager;
+import javax.persistence.EntityNotFoundException;
 import java.util.List;
 
 public class GenericRepository<T extends ValueObject> {

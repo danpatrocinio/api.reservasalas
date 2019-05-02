@@ -1,10 +1,10 @@
 package com.banana.reservasalas.models.entidades;
 
+import com.banana.reservasalas.models.ValueObject;
+
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
-
-import com.banana.reservasalas.models.ValueObject;
 
 @Entity
 @Table(name = "LOCAIS")

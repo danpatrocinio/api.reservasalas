@@ -6,11 +6,11 @@ public enum SimNao {
 
     private String value;
 
-    SimNao(String value){
+    SimNao(String value) {
         this.value = value;
     }
 
-    public static SimNao byValue(String value){
+    public static SimNao byValue(String value) {
         for (SimNao v : SimNao.values()) {
             if (v.getValue().equals(value)) {
                 return v;

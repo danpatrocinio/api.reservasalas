@@ -7,7 +7,6 @@ import com.banana.reservasalas.rest.AbstractCrudResource;
 import javax.inject.Inject;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
-
 import java.util.List;
 
 @Path("salas")

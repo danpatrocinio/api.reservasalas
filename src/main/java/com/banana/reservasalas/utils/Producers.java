@@ -3,13 +3,13 @@ package com.banana.reservasalas.utils;
 import com.banana.reservasalas.models.ValueObject;
 import com.banana.reservasalas.repositories.GenericRepository;
 
-import java.lang.reflect.ParameterizedType;
-import java.lang.reflect.Type;
 import javax.enterprise.context.Dependent;
 import javax.enterprise.inject.Produces;
 import javax.enterprise.inject.spi.InjectionPoint;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import java.lang.reflect.ParameterizedType;
+import java.lang.reflect.Type;
 
 public class Producers {
 
