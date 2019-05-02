@@ -13,4 +13,5 @@ public class BusinessExceptionMapper implements ExceptionMapper<BusinessExceptio
     public Response toResponse(BusinessException e) {
         return Response.status(Response.Status.BAD_REQUEST).entity("{\"error\" : \"".concat(e.getMessage().concat("\"}"))).build();
     }
+
 }
