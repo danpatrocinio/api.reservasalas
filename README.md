@@ -4,7 +4,7 @@ API back-end para controle de reservas de sala
 
 * Foi utilizado CDI para facilitar o controle de ciclo de vida das classes de interação com o banco de dados.
 
-* Para validação dos dados recebidos de client front-end foi utilizado a especificação Bean Validation que é muito útil e agiliza uma série de validações básicas de dados de forma padronizada.
+* Para validação dos dados recebidos de client front-end foi utilizado a especificação Java Bean Validation que é muito útil e agiliza uma série de validações básicas de dados de forma padronizada.
 
 * Com o intuito de melhor empacotar e distribuir a aplicação foi utilizado o Thorntail, originalmente WildFly Swarm, que oferece um servidor JavaEE embutido à aplicação com somente as dependências que são necessárias para executar o código sobre a JVM.
 
