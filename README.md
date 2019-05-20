@@ -2,6 +2,8 @@
 
 API back-end para controle de reservas de sala
 
+* Implementada camada de segurança dos recursos da API utilizando JWT por ser um padrão de autenticação baseado em token e de fácil utilização.
+
 * Foi utilizado CDI para facilitar o controle de ciclo de vida das classes de interação com o banco de dados.
 
 * Para validação dos dados recebidos de client front-end foi utilizado a especificação Java Bean Validation que é muito útil e agiliza uma série de validações básicas de dados de forma padronizada.
