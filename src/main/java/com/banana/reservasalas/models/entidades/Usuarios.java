@@ -28,6 +28,11 @@ public class Usuarios implements ValueObject {
     @Column(name = "EMAIL", length = 100)
     private String email;
 
+    @Size(min = 6, max = 8, message = "{Usuarios.senha.Size}")
+    @NotNull(message = "{Usuarios.senha.NotNull}")
+    @Column(name = "SENHA", length = 25)
+    private String senha;
+
     @Size(min = 8, max = 20, message = "{Usuarios.telefone.Size}")
     @Column(name = "TELEFONE", length = 255)
     private String telefone;
@@ -53,8 +58,16 @@ public class Usuarios implements ValueObject {
         return email;
     }
 
+    public String getSenha() {
+        return senha;
+    }
+
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public void setSenha(String senha) {
+        this.senha = senha;
     }
 
     public String getTelefone() {

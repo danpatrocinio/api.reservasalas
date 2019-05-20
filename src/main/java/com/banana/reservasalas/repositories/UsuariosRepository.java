@@ -8,6 +8,8 @@ import javax.ejb.TransactionAttribute;
 import javax.ejb.TransactionAttributeType;
 import javax.inject.Inject;
 
+import java.util.List;
+
 import static com.banana.reservasalas.utils.enums.PersistenceAction.*;
 
 @Stateless
@@ -25,11 +27,16 @@ public class UsuariosRepository extends AbstractGenericCrud<Usuarios> {
         return repository;
     }
 
+    public Usuarios findByEmail(String email) {
+        List<Usuarios> list = repository.getByCriteria("email = '".concat(email).concat("'"));
+        return list != null && !list.isEmpty() ? list.get(0) : null;
+    }
+
     @Override
     public void applyBusinessRules(Usuarios usuario, PersistenceAction action) {
         if (action.equals(INSERT) || action.equals(UPDATE)) {
 
-            if (repository.existsByCriteria("email = '".concat(usuario.getEmail()).concat("' AND id <> " + usuario.getId()))) {
+            if (getRepository().existsByCriteria("email = '".concat(usuario.getEmail()).concat("' AND id <> " + usuario.getId()))) {
                 throw new BusinessException("E-mail já cadastrado para outro usuário");
             }
 
